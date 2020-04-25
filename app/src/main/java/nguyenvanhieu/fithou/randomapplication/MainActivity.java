@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     EditText edtSoMin,edtSoMax;
-    TextView txtResult;
+    TextView txtResult;//thêm 
     Button btnRandom;
     static int soMin = 0,soMax =0;// cmt để thử pull
     @Override
