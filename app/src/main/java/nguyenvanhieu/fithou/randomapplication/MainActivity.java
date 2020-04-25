@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     EditText edtSoMin,edtSoMax;
-    TextView txtResult;
+    TextView txtResult;//thêm 
     Button btnRandom;
     static int soMin = 0,soMax =0;// cmt để thử pull
     @Override
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         anhXa();// bây giờ nhìn anh pull về nhé, a vừa push từ máy anh
+        /// đây là code anh sửa rồi anh push lên
+        //oke để anh pull về
         btnRandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
