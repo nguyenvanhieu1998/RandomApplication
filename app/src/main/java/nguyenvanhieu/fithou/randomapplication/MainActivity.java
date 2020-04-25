@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         anhXa();// bây giờ nhìn anh pull về nhé, a vừa push từ máy anh
         /// đây là code anh sửa rồi anh push lên
+        //oke để anh pull về
         btnRandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
