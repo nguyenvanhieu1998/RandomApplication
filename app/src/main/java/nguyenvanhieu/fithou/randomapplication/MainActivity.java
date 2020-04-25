@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtSoMin,edtSoMax;
     TextView txtResult;
     Button btnRandom;
-    static int soMin = 0,soMax =0;
+    static int soMin = 0,soMax =0;// cmt để thử pull
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
