@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtSoMin,edtSoMax;
     TextView txtResult;
     Button btnRandom;
-    static int soMin = 0,soMax =0;
+    static int soMin = 0,soMax =0;// cmt để thử pull
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,20 +25,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String chuoi1 = edtSoMin.getText().toString().trim();
                 String chuoi2 = edtSoMax.getText().toString().trim();
-                soMin = Integer.parseInt(chuoi1);
-                soMax = Integer.parseInt(chuoi2);
+//                soMin = Integer.parseInt(chuoi1);
+//                soMax = Integer.parseInt(chuoi2);
                 if (chuoi1 == "" || chuoi2.equals(""))
                 {
                     Toast.makeText(MainActivity.this, "Hãy nhập đủ dữ liệu", Toast.LENGTH_LONG).show();
-                } else if (soMin > soMax)
-                {
-                    Toast.makeText(MainActivity.this, "Số thứ nhất phải nhỏ hơn số thứ 2 !", Toast.LENGTH_SHORT).show();
                 }
-                else
-                    {
+                 else {
+                    soMin=Integer.parseInt(chuoi1);
+                    soMax=Integer.parseInt(chuoi2);
+
+                }
+                if(soMin>soMax){
+                    Toast.makeText(MainActivity.this,"Kiểm tra lại",Toast.LENGTH_SHORT).show();
+                }else {
                     Random r = new Random();
                     int kq = r.nextInt(soMax - soMin) + soMin;
-                    txtResult.setText(String.valueOf(kq));
+                    txtResult.setText(String.valueOf(kq)+ "Em học ai mà code hề quá em");
                 }
 
 
