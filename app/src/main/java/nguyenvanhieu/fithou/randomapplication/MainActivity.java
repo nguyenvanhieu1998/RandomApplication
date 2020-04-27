@@ -11,7 +11,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edtSoMin,edtSoMax;
+    EditText edtSoMin,edtSoMax;//sfsd
     TextView txtResult;//thêm 
     Button btnRandom;
     static int soMin = 0,soMax =0;// cmt để thử pull
